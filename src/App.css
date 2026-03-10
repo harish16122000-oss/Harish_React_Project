@@ -2,7 +2,7 @@
     
 
  .nav1{
-   margin-left: 800px;
+   margin-left: 500px;
  } }
  @media (min-width: 480px) and (max-width:990px) {
     .nav1{
@@ -11,8 +11,21 @@
  }
  .nav1{
     font-size: 20px;
-    gap: 50px;
+    gap: 100px;
+    
  }
+ .nav2{
+   color: black;
+   font-weight: 700;
+ }
+
  .navhead{
-    background-color: orange;
+background-color: aqua;
+ }
+ .img1{
+   height: 30px;
+ }
+ .carosel1{
+   background-image: url(./assets/imgi_2_slider-bg.jpg);
+   padding: 20% 20% 20% 20%;
  }
