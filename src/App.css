@@ -1,17 +1,38 @@
- @media screen and (min-width: 992px) {
+ @media screen and (min-width: 1441px) {
     
 
  .nav1{
    margin-left: 500px;
  } }
- @media (min-width: 480px) and (max-width:990px) {
+ @media (min-width: 400px) and (max-width:990px) {
     .nav1{
-        margin-left: 300px;
+        margin-left: 50px;
+        gap: 10px !important;
+
     }
+    
+ }
+ @media (min-width: 1024px) and (max-width: 1440px) {
+
+  .nav1{
+       margin-left: 300px;
+    }
+     .carousel1{
+    
+    padding: 35% 5% 25% 5% ;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ }
+ .navhead{
+  margin-bottom: 15px;
+  margin-top: 15px;
  }
  .nav1{
-    font-size: 20px;
+    font-size: 22px;
     gap: 100px;
+
     
  }
  .nav2{
@@ -19,13 +40,20 @@
    font-weight: 700;
  }
 
- .navhead{
-background-color: aqua;
- }
+ 
  .img1{
    height: 30px;
  }
- .carosel1{
+ .carousel1{
    background-image: url(./assets/imgi_2_slider-bg.jpg);
-   padding: 20% 20% 20% 20%;
+   padding: 40% 20% 20% 20%;
+     background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    
+ }
+  h3{
+position: absolute;
+z-index: 1;
+
  }
