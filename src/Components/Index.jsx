@@ -31,6 +31,10 @@ const Index = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    <div>
+      <div className='h1 text-center mt-5'>Hello</div>
+    </div>
+
     </div>
   )
 }

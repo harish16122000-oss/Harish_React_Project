@@ -4,14 +4,44 @@
  .nav1{
    margin-left: 500px;
  } }
- @media (min-width: 400px) and (max-width:990px) {
-    .nav1{
-        margin-left: 50px;
-        gap: 10px !important;
-
-    }
-    
+ @media (min-width: 900px) and (max-width:1100px) {
+  .nav1{
+    margin-left: 100px;
+  }
  }
+
+ @media (min-width: 700px) and (max-width:850px) {
+  .nav1{
+        margin-left: 300px !important;
+        
+}
+ }
+ @media (min-width: 350px) and (max-width:850px) {
+    .nav1{
+        margin-left: 30px;
+        
+}
+.img1{
+  margin-left: 50px;
+}
+.nav2{
+ display: none;
+}
+.navdrop .nav-link{
+  color: black;
+  font-size: 30px;
+  
+}
+.navdrop .dropdown-menu{
+  
+  background-color: white;
+}
+.navdrop .dropdown-item{
+  color: black;
+}
+
+ }
+
  @media (min-width: 1024px) and (max-width: 1440px) {
 
   .nav1{
@@ -46,14 +76,15 @@
  }
  .carousel1{
    background-image: url(./assets/imgi_2_slider-bg.jpg);
-   padding: 40% 20% 20% 20%;
+   padding: 40% 5% 10% 5%;
      background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
     
  }
-  h3{
-position: absolute;
-z-index: 1;
-
+   
+ @media screen and (min-width: 800px) {
+  .navdrop{
+    display: none;
+  }
  }
