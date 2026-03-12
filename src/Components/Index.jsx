@@ -2,8 +2,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 
 import Card from 'react-bootstrap/Card';
-
-
+ 
 const Index = () => {
    const a=  [
     {id:1, head:"Fast Delivery", text:"Fast and reliable delivery Right to your doorstep"},
@@ -46,6 +45,7 @@ const Index = () => {
 {a.map((ab)=>(
       <Card style={{ width: '18rem' }}className='text-center  card1'key={ab.id}>
       <p className='mt-5'></p>
+     
       <Card.Body>
         <Card.Title>{ab.head}</Card.Title>
         <Card.Text>
