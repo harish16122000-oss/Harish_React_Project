@@ -82,7 +82,7 @@
  .blog1{
   font-size: 80px;
  position: relative;
- left: 40px;
+right: 40px;
  
   font-weight: 900;
   color: red;
@@ -98,6 +98,9 @@
  @media screen and (min-width: 800px) {
   .navdrop{
     display: none;
+  }
+  .blog0{
+    margin-left: 150px;
   }
 }
 
@@ -149,7 +152,11 @@
  }
  .card1{
   background-color: #002C3E;
-  color: white
+  color: white;
+ width: 50%;
+ }
+ .icon{
+  font-size: 50px;
  }
    
  
