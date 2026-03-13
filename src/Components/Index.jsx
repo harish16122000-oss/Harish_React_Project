@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
-import Carousel from 'react-bootstrap/Carousel';
+
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
  import { TbTruckDelivery } from "react-icons/tb";
@@ -10,37 +10,33 @@ const Index = () => {
    const a=  [
     {id:1, image:<TbTruckDelivery />, head:"Fast Delivery", text:"Fast and reliable delivery Right to your doorstep"},
     {id:2, image:<SiFreecad />, head:"Free Shipping", text:"Free shipping on all orders No extra charges"},
-    {id:3, image:<FaAward />, head:"Best Quality", text:"Premium quality products Trusted and long-lasting"},
+    {id:3, image:<FaAward />, head:"Best Quality", text:"Premium quality products Trusted and long-lasting"}
 
   ];
+  const[content ,setContent] =useState(0);
+  const active = [{ title: "Discover Something New", content: "Discover a wide range of products designed with modern style and comfort in mind. "},
+    { title:"Shop Without Limits", content:"We focus on providing a smooth and reliable shopping experience for every customer. "},
+    { title:"Crafted for Excellence", content:"Our products are carefully selected to ensure the best quality and long-lasting performance. "}
+  ]
+
   return (
     
     <div>
-      <Carousel className='carousel1'>
-      <Carousel.Item interval={1000}>
-        
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
+<div className='carousel1'>
          
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
+         {active.map((text,index)=> content === index && (
+<div key={index} className='carousel0'>
+          <h1 className="h1">{text.title}</h1>
+          <p>{text.content}</p>
+          <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
+          </div>
+         ))}
+
          
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+  {active.map((item, index)=> (
+    <Button key={index} onClick={()=> setContent(index)}className='btn1 ms-1 mt-5'></Button>
+  ))}
+    </div>
 
     <Container>
     
@@ -69,7 +65,7 @@ const Index = () => {
       <div className='view  position-relative '></div>
      <div className="view1 position-absolute start-50"> 
       <div className="view2 h1 ">#NEW ARRIVALS</div>
-      <p className="mt-md-4 w-md-75 view3">Discover our latest collection with fresh styles and premium quality. <span className='view5'>Upgrade your wardrobe with the newest trends. Explore the newest additions to our store. Stylish, comfortable, and designed for everyday wear. </span> </p>
+      <p className="mt-md-4 w-md-75  view3">Discover our latest collection with fresh styles and premium quality. <span className='view5'>Upgrade your wardrobe with the newest trends. Explore the newest additions to our store. Stylish, comfortable, and designed for everyday wear. </span> </p>
         <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
       
     </div>

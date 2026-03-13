@@ -70,7 +70,7 @@
 }
  }
 
- @media (min-width: 1024px) and (max-width: 1440px) {
+ @media (min-width: 1005px) and (max-width: 1440px) {
 
   .nav1{
        margin-left: 300px;
@@ -104,6 +104,17 @@ right: 40px;
   background-color: #002C3E;
   color: white
  }
+  .view{
+    
+    padding: 25% 20% 20% 20%;
+   }
+ .view1{
+  top: 1500px !important;
+ }
+ .view2{
+  font-size: 50px;
+  color: #002C3E;
+ }
  }
  @media screen and (min-width: 800px) {
   .navdrop{
@@ -112,6 +123,10 @@ right: 40px;
   .blog0{
     margin-left: 150px;
   }
+.carousel0{
+  position: absolute;
+  top: 300px;
+}
 }
 
          /* Desktop */
@@ -140,7 +155,24 @@ right: 40px;
      background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-    
+    }
+    body{
+      overflow-x: hidden;
+    }
+
+    .carousel0{
+      animation: slideRight 2s  ease   ;
+      
+    }
+ @keyframes slideRight  {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{transform: translateX(0);
+  opacity: 1;
+  }
+  
  }
  .blog{
   font-family: serif;
@@ -173,10 +205,10 @@ right: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 25% 20% 20% 20%;
+    padding: 30% 20% 20% 20%;
    }
  .view1{
-  top: 1500px;
+  top: 1900px;
  }
  .view2{
   font-size: 50px;
@@ -187,4 +219,14 @@ right: 40px;
 }
 .view4:hover{
   background-color: #F7444E;
+}
+.btn1{
+  border-radius: 100%;
+background-color: #fff;
+}
+.btn1:hover{
+  background-color: #F7444E;
+}
+.btn1:active{
+background-color: #F7444E;
 }
