@@ -39,7 +39,7 @@
 }
 .blog{
   font-family: serif;
- font-size: 30px !important;
+ font-size: 35px !important;
  font-weight: 900;
  margin-top: 50px;
  margin-left: 30px !important;
@@ -47,7 +47,7 @@
  .blog1{
   font-size: 50px !important;
  position: relative;
- right: 160px !important;
+ right: 175px !important;
   font-weight: 900;
   color: red;
   
@@ -58,6 +58,16 @@
   justify-content: center;
   align-items: center;
  }
+  .view1{
+  top: 1350px !important;
+ }
+ .view2{
+  font-size: 20px !important;
+  
+ }
+.view5{
+  display: none;
+}
  }
 
  @media (min-width: 1024px) and (max-width: 1440px) {
@@ -158,5 +168,23 @@ right: 40px;
  .icon{
   font-size: 50px;
  }
-   
- 
+   .view{
+    background-image: url(./assets/arrival-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25% 20% 20% 20%;
+   }
+ .view1{
+  top: 1500px;
+ }
+ .view2{
+  font-size: 50px;
+  color: #002C3E;
+ }
+.view4{
+  background-color:#F7444E;
+}
+.view4:hover{
+  background-color: #F7444E;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
-
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
  import { TbTruckDelivery } from "react-icons/tb";
  import { SiFreecad } from "react-icons/si";
  import { FaAward } from "react-icons/fa";
@@ -40,7 +41,9 @@ const Index = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    <div className='container'> 
+
+    <Container>
+    
     <div className='blog0'>
       <div className='h1 text-center mt-5 blog '>Why Shop With Us <span className='blog1'>__</span> </div>
        </div>
@@ -58,6 +61,17 @@ const Index = () => {
        
       </Card.Body>
     </Card>))}
+    </div>
+    
+    </Container>
+
+    <div className="mt-5 pt-3 w-100">
+      <div className='view  position-relative '></div>
+     <div className="view1 position-absolute start-50"> 
+      <div className="view2 h1 ">#NEW ARRIVALS</div>
+      <p className="mt-md-4 w-md-75 view3">Discover our latest collection with fresh styles and premium quality. <span className='view5'>Upgrade your wardrobe with the newest trends. Explore the newest additions to our store. Stylish, comfortable, and designed for everyday wear. </span> </p>
+        <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
+      
     </div>
     </div>
     </div>
