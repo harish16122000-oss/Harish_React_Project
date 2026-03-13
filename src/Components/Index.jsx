@@ -14,9 +14,9 @@ const Index = () => {
 
   ];
   const[content ,setContent] =useState(0);
-  const active = [{ title: "Discover Something New", content: "Discover a wide range of products designed with modern style and comfort in mind. "},
-    { title:"Shop Without Limits", content:"We focus on providing a smooth and reliable shopping experience for every customer. "},
-    { title:"Crafted for Excellence", content:"Our products are carefully selected to ensure the best quality and long-lasting performance. "}
+  const active = [{ title: "Discover Something New",title1:"Exclusive Offers", content: "Discover a wide range of products designed with modern style and comfort in mind. Our collection is updated regularly to bring you the latest trends and high-quality items that suit every occasion. "},
+    { title:"Shop Without Limits",title1:"20% Offer On Everything", content:"We focus on providing a smooth and reliable shopping experience for every customer. From easy browsing to secure checkout and fast delivery, everything is designed to make your shopping simple and enjoyable."},
+    { title:"Crafted for Excellence",title1:"Perfect Quality", content:"Our products are carefully selected to ensure the best quality and long-lasting performance. We believe customers deserve products that combine durability, style, and comfort in one perfect package."}
   ]
 
   return (
@@ -26,8 +26,9 @@ const Index = () => {
          
          {active.map((text,index)=> content === index && (
 <div key={index} className='carousel0'>
-          <h1 className="h1">{text.title}</h1>
-          <p>{text.content}</p>
+          <h1 className="carousel2">{text.title}</h1>
+          <h1 className="carousel3">{text.title1}</h1>
+          <p className='w-50'>{text.content}</p>
           <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
           </div>
          ))}
@@ -63,14 +64,22 @@ const Index = () => {
 
     <div className="mt-5 pt-3 w-100">
       <div className='view  position-relative '></div>
-     <div className="view1 position-absolute start-50"> 
+     <div className="view1 "> 
       <div className="view2 h1 ">#NEW ARRIVALS</div>
       <p className="mt-md-4 w-md-75  view3">Discover our latest collection with fresh styles and premium quality. <span className='view5'>Upgrade your wardrobe with the newest trends. Explore the newest additions to our store. Stylish, comfortable, and designed for everyday wear. </span> </p>
         <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
       
     </div>
     </div>
+    <div className='contact text-center'>
+      <h1 className='contact1 pt-5'>Subscribe To Get Discount Offers </h1>
+      <p className='contact2 mt-5 '>Join our community and never miss an offer.
+Subscribe now to receive exciting deals, <br /> updates, and special discounts directly in your inbox.</p><br />
+      <input type="text" className='contact3 ps-4' placeholder='Enter Your Email'/><br />
+      <button className='contact4 mt-5'>Subscribe</button>
     </div>
+    </div> 
+    
   )
 }
 

@@ -58,9 +58,11 @@
   justify-content: center;
   align-items: center;
  }
-  .view1{
-  top: 1350px !important;
- }
+   .view1{
+  position: absolute;
+  top: 1830px;
+  left: 220px !important;}
+
  .view2{
   font-size: 20px !important;
   
@@ -68,6 +70,25 @@
 .view5{
   display: none;
 }
+.carousel2{
+ 
+  font-size: 40px !important;
+  font-weight: 900;
+}
+.carousel3{
+  
+  font-size: 40px !important;
+  font-weight: 900;
+}
+.contact3{
+   
+  width: 340px !important;
+   
+}
+.contact4{
+  width: 200px !important;
+}
+
  }
 
  @media (min-width: 1005px) and (max-width: 1440px) {
@@ -125,7 +146,7 @@ right: 40px;
   }
 .carousel0{
   position: absolute;
-  top: 300px;
+  top: 250px;
 }
 }
 
@@ -208,7 +229,9 @@ right: 40px;
     padding: 30% 20% 20% 20%;
    }
  .view1{
-  top: 1900px;
+  position: absolute;
+  
+  left: 600px;
  }
  .view2{
   font-size: 50px;
@@ -229,4 +252,42 @@ background-color: #fff;
 }
 .btn1:active{
 background-color: #F7444E;
+}
+.carousel2{
+  color: #F7444E;
+  font-family: serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+.carousel3{
+  color: #002C3E;
+  font-family: serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+.contact{
+  background-color: #D4CED0;
+  margin-top: 20px;
+ padding: 9%;
+}
+.contact1{
+  color: #002C3E;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.contact3{
+  height: 60px;
+  width: 740px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+}
+.contact4{
+  height: 50px;
+  width: 300px;
+  background-color: #F7444E;
+  border: none;
+  border-radius: 40px;
 }
