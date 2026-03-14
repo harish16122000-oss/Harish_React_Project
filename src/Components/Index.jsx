@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
  import { TbTruckDelivery } from "react-icons/tb";
  import { SiFreecad } from "react-icons/si";
  import { FaAward } from "react-icons/fa";
+ import img1 from "../assets/imgi_14_default.jpg";
+ import img2 from "../assets/imgi_64_attractive-young-girl-wearing-casual-260nw-1408503164.jpg";
+ import img3 from "../assets/imgi_138_young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg";
 const Index = () => {
    const a=  [
     {id:1, image:<TbTruckDelivery />, head:"Fast Delivery", text:"Fast and reliable delivery Right to your doorstep"},
@@ -18,7 +21,12 @@ const Index = () => {
     { title:"Shop Without Limits",title1:"20% Offer On Everything", content:"We focus on providing a smooth and reliable shopping experience for every customer. From easy browsing to secure checkout and fast delivery, everything is designed to make your shopping simple and enjoyable."},
     { title:"Crafted for Excellence",title1:"Perfect Quality", content:"Our products are carefully selected to ensure the best quality and long-lasting performance. We believe customers deserve products that combine durability, style, and comfort in one perfect package."}
   ]
-
+const [counter, setCouter] = useState(0);
+const act= [
+  {img: img1,title:'Arjun Kumar',  content:"“Great shopping experience! The product quality is excellent and the delivery was very fast." },
+  {img: img2,title:'Priya Sharma',  content:"I love the design and quality of the products. Everything arrived perfectly packed and exactly as shown on the website." },
+  {img: img3,title:'Rahul Verma', content:"Amazing service and great value for money. The website is easy to use and the support team was very helpful. Truly one of the best online shopping experiences." },
+]
   return (
     
     <div>
@@ -35,7 +43,7 @@ const Index = () => {
 
          
   {active.map((item, index)=> (
-    <Button key={index} onClick={()=> setContent(index)}className='btn1 ms-1 mt-5'></Button>
+    <Button key={index} onClick={()=> setContent(index)}className='btn1 ms-1 mt-5 rounded-circle'></Button>
   ))}
     </div>
 
@@ -65,12 +73,32 @@ const Index = () => {
     <div className="mt-5 pt-3 w-100">
       <div className='view  position-relative '></div>
      <div className="view1 "> 
-      <div className="view2 h1 ">#NEW ARRIVALS</div>
+      <h1 className="view2 h1 ">#NEW ARRIVALS</h1>
       <p className="mt-md-4 w-md-75  view3">Discover our latest collection with fresh styles and premium quality. <span className='view5'>Upgrade your wardrobe with the newest trends. Explore the newest additions to our store. Stylish, comfortable, and designed for everyday wear. </span> </p>
         <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
       
     </div>
     </div>
+    <Container className='pb-5 mb-5'>
+<div className='tes1 text-center'>
+        <h1 className='tes'>Customer's Testimonial</h1>
+         {act.map((text,index)=> counter === index && (
+<div key={index} className='tes0'>
+  <img src={text.img} alt=""  height="150px" width="150px" className='rounded-circle tes5'/>
+          <h1 className="tes2 mt-2">{text.title}</h1>
+          <h6 className="tes3 mt-2">Customer</h6>
+          <p className=''>{text.content}</p>
+          
+          </div>
+         ))}
+
+ <div>{act.map((item, index)=> (
+    <Button key={index} onClick={()=> setCouter(index)}className='btn1 ms-1 mt-3 rounded-circle'></Button>
+  ))}</div>
+
+
+    </div>
+    </Container>
     <div className='contact text-center'>
       <h1 className='contact1 pt-5'>Subscribe To Get Discount Offers </h1>
       <p className='contact2 mt-5 '>Join our community and never miss an offer.

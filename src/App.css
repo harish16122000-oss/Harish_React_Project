@@ -3,7 +3,12 @@
     
   .nav1{
    margin-left: 500px;
- } }
+ }
+.view1{
+ top: 1750px;
+ margin-left: 150px;
+}
+ }
  @media (min-width: 900px) and (max-width:1100px) {
   .nav1{
     margin-left: 100px;
@@ -148,6 +153,12 @@ right: 40px;
   position: absolute;
   top: 250px;
 }
+.tes{
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 50px;
+}
 }
 
          /* Desktop */
@@ -290,4 +301,23 @@ background-color: #F7444E;
   background-color: #F7444E;
   border: none;
   border-radius: 40px;
+}
+.tes{
+  padding-top: 30px;
+}
+.tes5{
+margin-top: 50px;
+}
+.tes{
+  font-family: serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.tes3{
+ color: rgb(148, 142, 142);
+}
+.tes0{ 
+  animation: slideRight 2s  ease   ;
+      
 }
