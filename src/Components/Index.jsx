@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
  import { TbTruckDelivery } from "react-icons/tb";
  import { SiFreecad } from "react-icons/si";
  import { FaAward } from "react-icons/fa";
+ import image1 from '../assets/imgi_1_logo.png'
  import img1 from "../assets/imgi_14_default.jpg";
  import img2 from "../assets/imgi_64_attractive-young-girl-wearing-casual-260nw-1408503164.jpg";
  import img3 from "../assets/imgi_138_young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg";
@@ -25,7 +26,7 @@ const [counter, setCouter] = useState(0);
 const act= [
   {img: img1,title:'Arjun Kumar',  content:"“Great shopping experience! The product quality is excellent and the delivery was very fast." },
   {img: img2,title:'Priya Sharma',  content:"I love the design and quality of the products. Everything arrived perfectly packed and exactly as shown on the website." },
-  {img: img3,title:'Rahul Verma', content:"Amazing service and great value for money. The website is easy to use and the support team was very helpful. Truly one of the best online shopping experiences." },
+  {img: img3,title:'Rahul Verma', content:"Amazing service and great value for money. The website is easy to use and the support team was very helpful. T" },
 ]
   return (
     
@@ -106,7 +107,46 @@ Subscribe now to receive exciting deals, <br /> updates, and special discounts d
       <input type="text" className='contact3 ps-4' placeholder='Enter Your Email'/><br />
       <button className='contact4 mt-5'>Subscribe</button>
     </div>
+    <Container>
+    <div className="pt-5 d-md-flex justify-content-evenly g-5">
+      <div className="">
+        <img src={image1} alt="" height="40px" className='mb-3' />
+        <p><b>Adress:</b> 2/36 School Street, Pottalkulam</p>
+        <p><b>Email:</b> <a href="mail to :harish16122000@gmail.com">harish16122000@gmail.com</a></p>
+        <p><b>Telephone:</b><a href="tel: 8523904929"> 8523904929</a></p>
+      </div>
+      <div className="ms-md-5"><h4 className='ms-4'>Menu</h4>
+      <ul type="none" >
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Testimonial</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+      </div>
+       <div className="ms-md-5"><h4 className='ms-3'>Account</h4>
+      <ul type="none">
+        <li>Account</li>
+        <li>Checkout</li>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Shopping</li>
+        <li>Widget</li>
+      </ul>
+      </div>
+      <div className="ms-md-5 ps-md-5">
+        <h4>Newsletter</h4>
+        <p>Subscribe by our newsletter and get update protidin.</p> 
+        <input type="text" placeholder='Enter Your Email'  className='px-5 py-2'/> <button className='p-2 border-0' style={{color:"white", backgroundColor:"#F7444E"}}>Subscribe</button>
+      </div>
+       </div>
+    
+    </Container>
+    <div className='text-center p-5' style={{backgroundColor:"#222222", color: "white"}}> &copy; @2026 Famms. All rights reserved</div>
+   
     </div> 
+    
     
   )
 }
