@@ -190,11 +190,38 @@ right: 40px;
     }
     body{
       overflow-x: hidden;
+     
     }
 
     .carousel0{
-      animation: slideRight 2s  ease   ;
+     
+      animation: slide 9s ease 1;
       
+    }
+    @keyframes slide {
+
+      0%{
+        transform: translateX(0%);
+      }
+      15%{
+        transform: translateX(0%);
+      }
+      33%{
+        transform: translateX(-100%);
+      }
+      50%{
+        transform: translateX(-100%);
+      }
+      75%{
+        transform: translateX(-200%);
+      }
+      100%{
+        transform: translateX(-200%);
+      }
+      
+    }
+    .carousel6{
+ animation: slideRight 2s ease forwards;
     }
  @keyframes slideRight  {
   from {
@@ -319,5 +346,11 @@ margin-top: 50px;
 }
 .tes0{ 
   animation: slideRight 2s  ease   ;
-      
+}
+.ic1{
+ color: white;
+  
+}
+.ic1:active{
+  color: #F7444E;
 }

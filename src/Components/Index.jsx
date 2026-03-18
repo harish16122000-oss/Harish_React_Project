@@ -10,6 +10,10 @@ import Button from 'react-bootstrap/Button';
  import img1 from "../assets/imgi_14_default.jpg";
  import img2 from "../assets/imgi_64_attractive-young-girl-wearing-casual-260nw-1408503164.jpg";
  import img3 from "../assets/imgi_138_young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg";
+
+import { FaCircle } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 const Index = () => {
    const a=  [
     {id:1, image:<TbTruckDelivery />, head:"Fast Delivery", text:"Fast and reliable delivery Right to your doorstep"},
@@ -32,19 +36,24 @@ const act= [
     
     <div>
 <div className='carousel1'>
+  
          
          {active.map((text,index)=> content === index && (
+         
 <div key={index} className='carousel0'>
+   <div className="carousel6">
           <h1 className="carousel2">{text.title}</h1>
           <h1 className="carousel3">{text.title1}</h1>
           <p className='w-50'>{text.content}</p>
           <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
           </div>
+          </div>
          ))}
 
          
   {active.map((item, index)=> (
-    <Button key={index} onClick={()=> setContent(index)}className='btn1 ms-1 mt-5 rounded-circle'></Button>
+    
+    <FaCircle  key={index} onClick={()=> setContent(index)} className='ms-2 fs-4 ic1' active/>
   ))}
     </div>
 
@@ -83,6 +92,10 @@ const act= [
     <Container className='pb-5 mb-5'>
 <div className='tes1 text-center'>
         <h1 className='tes'>Customer's Testimonial</h1>
+        <div className="d-flex justify-content-center">
+        <div className=""><FaArrowAltCircleLeft /></div>
+       
+        <div className="">
          {act.map((text,index)=> counter === index && (
 <div key={index} className='tes0'>
   <img src={text.img} alt=""  height="150px" width="150px" className='rounded-circle tes5'/>
@@ -92,18 +105,19 @@ const act= [
           
           </div>
          ))}
-
+</div>
  <div>{act.map((item, index)=> (
-    <Button key={index} onClick={()=> setCouter(index)}className='btn1 ms-1 mt-3 rounded-circle'></Button>
+    
+    <FaArrowAltCircleRight key={index} onClick={()=> setCouter(index)}/>
   ))}</div>
-
+</div>
 
     </div>
     </Container>
     <div className='contact text-center'>
       <h1 className='contact1 pt-5'>Subscribe To Get Discount Offers </h1>
       <p className='contact2 mt-5 '>Join our community and never miss an offer.
-Subscribe now to receive exciting deals, <br /> updates, and special discounts directly in your inbox.</p><br />
+Subscribe now to receive exciting deals, <br/> updates, and special discounts directly in your inbox.</p><br />
       <input type="text" className='contact3 ps-4' placeholder='Enter Your Email'/><br />
       <button className='contact4 mt-5'>Subscribe</button>
     </div>
