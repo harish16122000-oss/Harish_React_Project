@@ -36,20 +36,20 @@ const act= [
     
     <div>
 <div className='carousel1'>
-  
+   <div className="carousel6">
          
          {active.map((text,index)=> content === index && (
          
 <div key={index} className='carousel0'>
-   <div className="carousel6">
+  
           <h1 className="carousel2">{text.title}</h1>
           <h1 className="carousel3">{text.title1}</h1>
           <p className='w-50'>{text.content}</p>
           <Button className='view4 mt-md-5 p-md-3'>View Products</Button>
-          </div>
+          
           </div>
          ))}
-
+</div>
          
   {active.map((item, index)=> (
     

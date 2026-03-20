@@ -196,26 +196,35 @@ right: 40px;
      
     }
 
-    .carousel6{
-     
-      animation: slide 9s ease 1;
+    .carousel0{
+   animation: slide 10s ease  infinite ;
+   
       
     }
     @keyframes slide {
 
       0%{
-        transform: translateX(0%);
+        transform: translateX(150%);
       }
       15%{
         transform: translateX(0%);
       }
+      30%{
+transform: translateX(0%);
+      }
+      55%{
+transform: translateX(0%);
+      }
+      75%{
+transform: translateX(0%);
+      }
       
       100%{
-        transform: translateX(100%);
+        transform: translateX(-150%);
       }
       
     }
-    .carousel0{
+    /* .carousel0{
  animation: slideRight 2s ease forwards;
     }
  @keyframes slideRight  {
@@ -227,7 +236,7 @@ right: 40px;
   opacity: 1;
   }
   
- }
+ } */
  .blog{
   font-family: serif;
  font-size: 60px;
