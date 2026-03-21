@@ -349,7 +349,7 @@ margin-top: 50px;
  color: rgb(148, 142, 142);
 }
 .tes0{ 
-  animation: slideRight 2s  ease   ;
+width: 600px;
 }
 .ic1{
  color: white;
@@ -357,4 +357,10 @@ margin-top: 50px;
 }
 .ic1:active{
   color: #F7444E;
+}
+
+.b1{
+  color: #F7444E;
+   font-size: 40px;
+ margin-top: 30px;
 }

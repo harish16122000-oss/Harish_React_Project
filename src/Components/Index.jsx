@@ -32,6 +32,17 @@ const act= [
   {img: img2,title:'Priya Sharma',  content:"I love the design and quality of the products. Everything arrived perfectly packed and exactly as shown on the website." },
   {img: img3,title:'Rahul Verma', content:"Amazing service and great value for money. The website is easy to use and the support team was very helpful. T" },
 ]
+const handlePrev= ()=>{
+  setCouter((prev)=>(
+    prev===0 ? act.length -1 : prev -1
+  ));
+};
+const handleNext= ()=>{
+  setCouter((prev)=>(
+    prev === act.length-1 ? 0 : prev + 1
+  ));
+}
+
   return (
     
     <div>
@@ -53,7 +64,7 @@ const act= [
          
   {active.map((item, index)=> (
     
-    <FaCircle  key={index} onClick={()=> setContent(index)} className='ms-2 fs-4 ic1' active/>
+    <FaCircle  key={index} onClick={()=> setContent(index)} className='ms-2 fs-4 ic1' />
   ))}
     </div>
 
@@ -92,8 +103,8 @@ const act= [
     <Container className='pb-5 mb-5'>
 <div className='tes1 text-center'>
         <h1 className='tes'>Customer's Testimonial</h1>
-        <div className="d-flex justify-content-center">
-        <div className=""><FaArrowAltCircleLeft /></div>
+        <div className="d-flex justify-content-center  ">
+        <div className=""><button className='border-0 border-0 mt-5 pt-5 bt1'onClick={handlePrev}><FaArrowAltCircleLeft className='bd1'  /></button></div>
        
         <div className="">
          {act.map((text,index)=> counter === index && (
@@ -106,10 +117,10 @@ const act= [
           </div>
          ))}
 </div>
- <div>{act.map((item, index)=> (
+ <div>
     
-    <FaArrowAltCircleRight key={index} onClick={()=> setCouter(index)}/>
-  ))}</div>
+  <FaArrowAltCircleRight className='b1 mt-5' onClick={handleNext} />
+ </div>
 </div>
 
     </div>
