@@ -103,8 +103,8 @@ const handleNext= ()=>{
     <Container className='pb-5 mb-5'>
 <div className='tes1 text-center'>
         <h1 className='tes'>Customer's Testimonial</h1>
-        <div className="d-flex justify-content-center  ">
-        <div className=""><button className='border-0 border-0 mt-5 pt-5 bt1'onClick={handlePrev}><FaArrowAltCircleLeft className='bd1'  /></button></div>
+        <div className="d-flex justify-content-center ">
+        <div className="mt-5 "> <FaArrowAltCircleLeft className='b1 mt-5' onClick={handlePrev} /></div>
        
         <div className="">
          {act.map((text,index)=> counter === index && (
@@ -117,7 +117,7 @@ const handleNext= ()=>{
           </div>
          ))}
 </div>
- <div>
+ <div className='mt-5 '>
     
   <FaArrowAltCircleRight className='b1 mt-5' onClick={handleNext} />
  </div>

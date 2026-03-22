@@ -96,6 +96,9 @@
 .contact4{
   width: 200px !important;
 }
+.tes0{ 
+width: 300px !important;
+}
 
  }
 
@@ -350,7 +353,34 @@ margin-top: 50px;
 }
 .tes0{ 
 width: 600px;
+ animation: slide 10s ease  infinite ;
+ z-index: 1;
+ position: sticky;
 }
+
+@keyframes slide {
+
+      0%{
+        transform: translateX(150%);
+      }
+      15%{
+        transform: translateX(0%);
+      } 
+      30%{
+transform: translateX(0%);
+      }
+      55%{
+transform: translateX(0%);
+      }
+      75%{
+transform: translateX(0%);
+      }
+      
+      100%{
+        transform: translateX(-150%);
+      }}
+
+
 .ic1{
  color: white;
   
@@ -363,4 +393,7 @@ width: 600px;
   color: #F7444E;
    font-size: 40px;
  margin-top: 30px;
+ z-index: 11;
+ position: sticky;
 }
+
