@@ -168,6 +168,7 @@ right: 40px;
 }
 
          /* Desktop */
+
  .navhead{
   margin-bottom: 15px;
   margin-top: 15px;
@@ -181,6 +182,9 @@ right: 40px;
  .nav2{
    color: black;
    font-weight: 700;
+ }
+ .nav2:hover{
+  color: #F7444E;
  }
 
  
@@ -223,7 +227,7 @@ transform: translateX(0%);
       }
       
       100%{
-        transform: translateX(-150%);
+        transform: translateX(-180%);
       }
       
     }
@@ -286,7 +290,9 @@ transform: translateX(0%);
   background-color:#F7444E;
 }
 .view4:hover{
-  background-color: #F7444E;
+  color: #F7444E;
+  background-color: #D4CED0;
+  border: 1px solid  #F7444E;
 }
 .btn1{
   border-radius: 100%;
@@ -336,6 +342,11 @@ background-color: #F7444E;
   border: none;
   border-radius: 40px;
 }
+.contact4:hover{
+  color: #F7444E;
+  background-color: #D4CED0;
+  border: 1px solid  #F7444E;
+}
 .tes{
   padding-top: 30px;
 }
@@ -353,31 +364,27 @@ margin-top: 50px;
 }
 .tes0{ 
 width: 600px;
- animation: slide 10s ease  infinite ;
+ animation: slider 2s ease  infinite ;
  z-index: 1;
  position: sticky;
 }
 
-@keyframes slide {
+@keyframes slider {
 
       0%{
-        transform: translateX(150%);
+        transform: translateX(200%);
       }
-      15%{
-        transform: translateX(0%);
-      } 
+     
       30%{
 transform: translateX(0%);
       }
       55%{
 transform: translateX(0%);
       }
-      75%{
-transform: translateX(0%);
-      }
+     
       
       100%{
-        transform: translateX(-150%);
+        transform: translateX(-200%);
       }}
 
 
@@ -395,5 +402,19 @@ transform: translateX(0%);
  margin-top: 30px;
  z-index: 11;
  position: sticky;
+}
+.b1:hover{
+  color: black;
+}
+.con1{
+  background-color: #F7444E;
+  color: white;
+   border: 1px solid  #F7444E;
+}
+
+.con1:hover{
+   color: #F7444E;
+  background-color: white;
+  border: 1px solid  #F7444E;
 }
 

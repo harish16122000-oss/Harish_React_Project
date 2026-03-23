@@ -107,6 +107,7 @@ const handleNext= ()=>{
         <div className="mt-5 "> <FaArrowAltCircleLeft className='b1 mt-5' onClick={handlePrev} /></div>
        
         <div className="">
+          
          {act.map((text,index)=> counter === index && (
 <div key={index} className='tes0'>
   <img src={text.img} alt=""  height="150px" width="150px" className='rounded-circle tes5'/>
@@ -116,6 +117,7 @@ const handleNext= ()=>{
           
           </div>
          ))}
+         
 </div>
  <div className='mt-5 '>
     
@@ -163,7 +165,7 @@ Subscribe now to receive exciting deals, <br/> updates, and special discounts di
       <div className="ms-md-5 ps-md-5">
         <h4>Newsletter</h4>
         <p>Subscribe by our newsletter and get update protidin.</p> 
-        <input type="text" placeholder='Enter Your Email'  className='px-5 py-2'/> <button className='p-2 border-0' style={{color:"white", backgroundColor:"#F7444E"}}>Subscribe</button>
+        <input type="text" placeholder='Enter Your Email'  className='px-5 py-2'/> <button className='con1 p-2 '  >Subscribe</button>
       </div>
        </div>
     
